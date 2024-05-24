@@ -1,0 +1,20 @@
+
+
+sleep 10
+sudo -H -u pi /usr/bin/python3 /home/pi/fastapi-mongo/app/main.py &
+
+sleep 10 
+sudo -H -u pi /usr/bin/python3 /home/pi/telepathy/simple1.py &
+
+exit 0
+
+
+sudo chmod -x /etc/rc.local
+
+
+
+#sudo -H -u pi /usr/bin/python3 /home/pi/fastapi-mongo/app/main.py &
+
+#sleep 15 
+#sudo -H -u pi /usr/bin/python3 /home/pi/telepathy/simple1.py &
+#sudo -H -u pi python3 /home/pi/telepathy/simple1.py &
